@@ -1,0 +1,28 @@
+(defun c:hacimhesap ()
+  (setq kirmizi-kotlar (getstring "\nKırmızı kotları virgülle ayırarak girin: "))
+  (setq siyah-kotlar (getstring "\nSiyah kotları virgülle ayırarak girin: "))
+  (setq terasman-kotlar (getstring "\nTerasman kotlarını virgülle ayırarak girin: "))
+  (setq ara-mesafe (getreal "\nAra mesafeyi girin: "))
+  (setq yol-genisligi (getreal "\nYol genişliğini girin: "))
+
+  (setq kirmizi-kotlar (split " " kirmizi-kotlar))
+  (setq siyah-kotlar (split " " siyah-kotlar))
+  (setq terasman-kotlar (split " " terasman-kotlar))
+
+  (setq toplam-kazi 0)
+  (setq toplam-dolgu 0)
+
+  (repeat (length kirmizi-kotlar)
+    (setq k (nth i kirmizi-kotlar))
+    (setq s (nth i siyah-kotlar))
+    (setq t (nth i terasman-kotlar))
+    (setq kazı (* (- s t) ara-mesafe yol-genisligi))
+    (setq dolgu (* (- t k) ara-mesafe yol-genisligi))
+    (setq toplam-kazi (+ toplam-kazi kazı))
+    (setq toplam-dolgu (+ toplam-dolgu dolgu))
+    (setq i (1+ i))
+  )
+
+  (princ (strcat "\nToplam Kazı Hacmi: " (rtos toplam-kazi 2 2) " m³"))
+  (princ (strcat "\nToplam Dolgu Hacmi: " (rtos toplam-dolgu 2 2) " m³"))
+)
