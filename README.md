@@ -6,6 +6,20 @@ road and utility works). Each file is loaded with `APPLOAD` and adds one or more
 
 Rebar take-off LISP commands live in the separate `rebar-takeoff` repository.
 
+**Türkçe özet:** Metraj, kazı-dolgu, çizim yardımcıları ve Excel/CSV/JSON dışa aktarma için
+yazdığım AutoLISP komutları. Geçmiş ve kararlar: [docs/GECMIS.md](docs/GECMIS.md).
+
+## Install
+
+```bash
+git clone https://github.com/erhanerogluant/autocad-lisp-tools.git
+```
+
+- **One drawing:** in AutoCAD type `APPLOAD`, pick the `.lsp` file, then type its command
+  (listed below).
+- **Every drawing:** `APPLOAD` → *Startup Suite* → *Contents…* → add the files you use.
+- Some prompts are Turkish (Windows-1254 text); open and save the files in that encoding.
+
 ## Area & length (`area-length/`)
 
 | File | Command |
