@@ -1,13 +1,12 @@
 # CLAUDE.md — AutoCAD LISP Tools
 
-Metraj, kazı-dolgu, çizim ve dışa aktarma için AutoLISP komutları. Ayrıntı: [README.md](README.md).
+AutoLISP commands for take-off, earthwork, drawing and export. Details: [README.md](README.md).
 
-**Yeni bir oturumda önce [docs/GECMIS.md](docs/GECMIS.md) dosyasını oku.** Dosyaların nereden
-toplandığı, neyin neden dışarıda bırakıldığı orada. Yeni karar ve gelişmeleri oraya tarihli
-(en yeni en üstte) ekle.
+**At the start of a session read [docs/HISTORY.md](docs/HISTORY.md)**: where the files came
+from and what was left out. Add a dated entry there (newest first) after each session.
 
-## Kurallar
-- Kullanıcıyla Türkçe konuş; README ve commit mesajları İngilizce.
-- Başka yazarın (telif notu olan) LISP dosyasını depoya ekleme.
-- `.lsp` dosyaları Windows-1254 olabilir; kodlamayı bozma (`.gitattributes`: `-text`).
-- Yeni dosya eklenince README'deki komut tablosunu güncelle.
+## Rules
+- README, docs and commit messages in English.
+- Do not add LISP files by other authors (copyright notices).
+- `.lsp` files may be Windows-1254 encoded; do not convert them (`.gitattributes`: `-text`).
+- Update the command tables in the README when files are added.

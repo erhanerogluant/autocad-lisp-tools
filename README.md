@@ -1,13 +1,12 @@
 # AutoCAD LISP Tools
 
-AutoLISP commands I wrote between 2024 and 2025 for quantity take-off (metraj), earthwork and
+AutoLISP commands I wrote between 2024 and 2025 for quantity take-off, earthwork and
 infrastructure as-built work on Turkish public construction projects (hospital, housing,
 road and utility works). Each file is loaded with `APPLOAD` and adds one or more commands.
 
 Rebar take-off LISP commands live in the separate `rebar-takeoff` repository.
 
-**Türkçe özet:** Metraj, kazı-dolgu, çizim yardımcıları ve Excel/CSV/JSON dışa aktarma için
-yazdığım AutoLISP komutları. Geçmiş ve kararlar: [docs/GECMIS.md](docs/GECMIS.md).
+Project history: [docs/HISTORY.md](docs/HISTORY.md).
 
 ## Install
 
